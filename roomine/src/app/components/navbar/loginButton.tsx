@@ -1,11 +1,15 @@
 'use client'
 
 import { GrLogin } from 'react-icons/gr'
+import useRegisterModal from '@/app/hooks/useRegisterModel'
 
 const LoginButton = () => {
+
+    const registerModal = useRegisterModal();
+
     return (
         <div
-            onClick={() => {}}
+            onClick={registerModal.onOpen}
             className="
                 border-[1px]
                 w-full
